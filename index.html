@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Antenna Radiation Pattern Viewer: 3D patterns, gain and beamwidth</title>
+    <meta name="description" content="Free 3D antenna radiation pattern viewer: dipole, monopole, Yagi, patch and phased arrays with steering, plus import of CSV, NEC2 output and MSI Planet files. E/H-plane polar cuts, gain, HPBW and front-to-back. Runs in your browser." />
+    <meta name="keywords" content="antenna radiation pattern, 3D antenna pattern viewer, NEC2 radiation pattern, MSI Planet pln, dipole pattern, Yagi pattern, patch antenna pattern, phased array steering, HPBW, front to back ratio, antenna gain" />
+    <meta name="author" content="Volodymyr Kopytsia" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#f4f5f7" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="canonical" href="https://hermes98761234.github.io/radiation-pattern-viewer/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="apple-mobile-web-app-title" content="Patterns" />
+
+    <!-- Open Graph / Facebook / Telegram / Slack -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Antenna Radiation Pattern Viewer" />
+    <meta property="og:url" content="https://hermes98761234.github.io/radiation-pattern-viewer/" />
+    <meta property="og:title" content="Antenna Radiation Pattern Viewer" />
+    <meta property="og:description" content="Explore antenna patterns in 3D: built-in dipole, Yagi, patch and phased arrays, or import NEC2, MSI and CSV files. Polar cuts, gain, HPBW, F/B." />
+    <meta property="og:image" content="https://hermes98761234.github.io/radiation-pattern-viewer/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="A colored 3D antenna radiation lobe with the headline: antenna radiation pattern viewer." />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="uk_UA" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Antenna Radiation Pattern Viewer" />
+    <meta name="twitter:description" content="3D antenna patterns, polar cuts, gain and beamwidth. Import NEC2, MSI and CSV. Runs in your browser." />
+    <meta name="twitter:image" content="https://hermes98761234.github.io/radiation-pattern-viewer/og-image.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Antenna Radiation Pattern Viewer",
+        "url": "https://hermes98761234.github.io/radiation-pattern-viewer/",
+        "description": "Interactive 3D viewer for antenna radiation patterns: analytic dipole, monopole, Yagi, patch and phased-array models, plus import of CSV, NEC2 and MSI Planet files, with polar cuts and gain, beamwidth and front-to-back readouts.",
+        "applicationCategory": "EngineeringApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires JavaScript and WebGL",
+        "inLanguage": ["en", "uk"],
+        "isAccessibleForFree": true,
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "author": { "@type": "Person", "name": "Volodymyr Kopytsia" }
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>This viewer needs JavaScript.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
